@@ -1,0 +1,375 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  list-style: none;
+  text-decoration: none; }
+
+html,
+body {
+  font-family: "Dosis", sans-serif; }
+
+.specialization-header hr, .creative-processs .creative-process-header hr {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: auto;
+  max-width: 60px;
+  padding-top: 0.5rem;
+  border-color: #ebc11c; }
+
+.creative-processs .creative-process-grid .project-discusss .step-1 .process-step, .creative-processs .creative-process-grid .project-brainstorm .step-2 .process-step, .creative-processs .creative-process-grid .ui-ux-planning .step-3 .process-step, .creative-processs .creative-process-grid .interact .step-4 .process-step {
+  display: inline-block;
+  color: #f4f4f4;
+  background-color: #ebc11c;
+  padding: 0.3rem 1.2rem;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 8.5rem;
+  left: 3rem; }
+
+.creative-processs .creative-process-grid .project-brainstorm .step-2 i, .creative-processs .creative-process-grid .ui-ux-planning .step-3 i, .creative-processs .creative-process-grid .interact .step-4 i {
+  color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 100%;
+  background-color: #000; }
+
+.navbar-showcase {
+  background: url("/dist/img/showcase.jpg") no-repeat center center/cover; }
+  .navbar-showcase .nav-bar {
+    color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem; }
+    .navbar-showcase .nav-bar .nav-logo h1 {
+      font-size: 2rem; }
+    .navbar-showcase .nav-bar .nav-item {
+      display: flex; }
+    .navbar-showcase .nav-bar li {
+      padding: 1rem 1.5rem; }
+    .navbar-showcase .nav-bar li a {
+      color: #f4f4f4;
+      font-size: 1rem;
+      transition: all 0.5s ease-in-out; }
+    .navbar-showcase .nav-bar li a:hover {
+      border-bottom: 2px solid #e6e1e1;
+      padding-bottom: 0.5rem; }
+    .navbar-showcase .nav-bar .current {
+      border-bottom: 2px solid #ebc11c;
+      padding-bottom: 0.5rem; }
+      .navbar-showcase .nav-bar .current:hover {
+        border-bottom: 2px solid #ebc11c;
+        padding-bottom: 0.5rem; }
+    @media (max-width: 500px) {
+      .navbar-showcase .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        height: 30vh;
+        padding: 0 0 1.5rem; }
+        .navbar-showcase .nav-bar .nav-item {
+          justify-content: center; }
+        .navbar-showcase .nav-bar ul li {
+          padding: 1rem; }
+        .navbar-showcase .nav-bar ul li a {
+          font-size: 1rem; }
+        .navbar-showcase .nav-bar .nav-logo h1 {
+          text-align: center;
+          margin-top: 1rem;
+          font-size: 2rem; } }
+    @media (max-width: 768px) and (min-width: 501px) {
+      .navbar-showcase .nav-bar {
+        justify-content: space-around;
+        padding: 1.5rem 0; }
+        .navbar-showcase .nav-bar ul li {
+          padding: 1rem; }
+        .navbar-showcase .nav-bar ul li a {
+          font-size: 1rem; } }
+  @media (max-width: 500px) {
+    .navbar-showcase {
+      height: 27vh;
+      border-bottom: 2px solid #ebc11c; } }
+  .navbar-showcase .showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+    color: #f4f4f4; }
+    .navbar-showcase .showcase-header h1 {
+      font-size: 4.5rem; }
+    .navbar-showcase .showcase-text p {
+      font-size: 1.3rem;
+      margin: 0 0 1rem; }
+    .navbar-showcase .showcase .btn-light {
+      background: #f4f4f4;
+      color: #000;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      margin-top: 1rem;
+      transition: all 0.5s ease-in-out; }
+    .navbar-showcase .showcase .btn-light:hover {
+      background: #ebc11c; }
+    @media (max-width: 500px) {
+      .navbar-showcase .showcase {
+        display: none; } }
+    @media (max-width: 768px) and (min-width: 501px) {
+      .navbar-showcase .showcase {
+        height: 62vh; }
+        .navbar-showcase .showcase-header h1 {
+          font-size: 3.5rem;
+          text-align: center;
+          padding: 0 2rem; }
+        .navbar-showcase .showcase-text p {
+          font-size: 1rem;
+          margin: 0 0 1rem; } }
+    @media (max-width: 1024px) and (min-width: 769px) {
+      .navbar-showcase .showcase-header h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        padding: 0 2rem; }
+      .navbar-showcase .showcase-text p {
+        font-size: 1rem;
+        margin: 0 0 1rem; } }
+
+.specialization {
+  background: #fcfcfc;
+  text-align: center;
+  padding: 2rem 1rem 3rem; }
+  .specialization-header {
+    font-size: 1.4rem; }
+  .specialization-text {
+    padding: 1rem 0 2rem;
+    font-size: 1.2rem; }
+  .specialization .specialization-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .specialization .specialization-details .concepting {
+      padding: 1rem; }
+      .specialization .specialization-details .concepting p {
+        font-size: 1rem;
+        text-align: center; }
+      .specialization .specialization-details .concepting i {
+        color: #ebc11c;
+        padding-bottom: 0.5rem; }
+    .specialization .specialization-details .ui-ux {
+      padding: 1rem; }
+      .specialization .specialization-details .ui-ux p {
+        font-size: 1rem;
+        text-align: center; }
+      .specialization .specialization-details .ui-ux i {
+        color: #ebc11c;
+        padding-bottom: 0.5rem; }
+    .specialization .specialization-details .visual-design {
+      padding: 1rem; }
+      .specialization .specialization-details .visual-design p {
+        font-size: 1rem;
+        text-align: center; }
+      .specialization .specialization-details .visual-design i {
+        color: #ebc11c;
+        padding-bottom: 0.5rem; }
+    .specialization .specialization-details .interaction {
+      padding: 1rem; }
+      .specialization .specialization-details .interaction p {
+        font-size: 1rem;
+        text-align: center; }
+      .specialization .specialization-details .interaction i {
+        color: #ebc11c;
+        padding-bottom: 0.5rem; }
+    .specialization .specialization-details .clients {
+      padding: 2.5rem 0;
+      background-color: #f5f5f5; }
+      .specialization .specialization-details .clients i {
+        padding-bottom: 0.5rem; }
+      .specialization .specialization-details .clients p {
+        font-size: 1.5rem; }
+      .specialization .specialization-details .clients figure {
+        padding-top: 1rem;
+        font-size: 2rem; }
+    .specialization .specialization-details .awards {
+      padding: 2.5rem 0;
+      background-color: #e6e1e1; }
+      .specialization .specialization-details .awards i {
+        padding-bottom: 0.5rem; }
+      .specialization .specialization-details .awards p {
+        font-size: 1.5rem; }
+      .specialization .specialization-details .awards figure {
+        padding-top: 1rem;
+        font-size: 2rem; }
+    .specialization .specialization-details .hours-worked {
+      padding: 2.5rem 0;
+      background-color: #f5f5f5; }
+      .specialization .specialization-details .hours-worked i {
+        padding-bottom: 0.5rem; }
+      .specialization .specialization-details .hours-worked p {
+        font-size: 1.5rem; }
+      .specialization .specialization-details .hours-worked figure {
+        padding-top: 1rem;
+        font-size: 2rem; }
+    .specialization .specialization-details .projects-completed {
+      padding: 2.5rem 0;
+      background-color: #e6e1e1; }
+      .specialization .specialization-details .projects-completed i {
+        padding-bottom: 0.5rem; }
+      .specialization .specialization-details .projects-completed p {
+        font-size: 1.5rem; }
+      .specialization .specialization-details .projects-completed figure {
+        padding-top: 1rem;
+        font-size: 2rem; }
+    @media (max-width: 500px) {
+      .specialization .specialization-details {
+        grid-template-columns: 1fr; }
+        .specialization .specialization-details .concepting,
+        .specialization .specialization-details .ui-ux,
+        .specialization .specialization-details .visual-design {
+          border-bottom: 0.1px solid #e6e1e1; } }
+    @media (max-width: 768px) and (min-width: 501px) {
+      .specialization .specialization-details {
+        grid-template-columns: 1fr 1fr; } }
+
+.creative-processs {
+  padding: 1.5rem 1rem;
+  text-align: center; }
+  .creative-processs .creative-process-header p {
+    font-size: 2rem; }
+  .creative-processs .creative-process-text {
+    padding: 1.2rem 0;
+    font-size: 1.2rem; }
+  .creative-processs .creative-process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 1.7rem; }
+    .creative-processs .creative-process-grid .project-discusss {
+      padding: 2rem 1rem; }
+      .creative-processs .creative-process-grid .project-discusss:hover {
+        color: #000;
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .project-discusss .para {
+        position: relative;
+        bottom: 1.5rem;
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .project-discusss:hover .para {
+        margin-top: 1rem; }
+      .creative-processs .creative-process-grid .project-discusss .step-1:hover.step-1 i {
+        background-color: #ebc11c;
+        transition: all 1s ease-in-out;
+        transform: scale(1.2); }
+      .creative-processs .creative-process-grid .project-discusss .step-1:hover.step-1 .process-step {
+        background-color: #000;
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .project-discusss .step-1 i {
+        color: #f4f4f4;
+        padding: 2rem 2.7rem;
+        border-radius: 100%;
+        background-color: #000;
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .project-discusss .step-1 .process-step {
+        transition: all 1s ease-in-out; }
+    .creative-processs .creative-process-grid .project-brainstorm {
+      padding: 2rem 1rem; }
+      .creative-processs .creative-process-grid .project-brainstorm:hover {
+        color: #000;
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .project-brainstorm .para {
+        transition: all 1s ease-in-out;
+        position: relative;
+        bottom: 1.5rem; }
+      .creative-processs .creative-process-grid .project-brainstorm:hover .para {
+        margin-top: 1rem; }
+      .creative-processs .creative-process-grid .project-brainstorm .step-2:hover.step-2 i {
+        background-color: #ebc11c;
+        transition: all 1s ease-in-out;
+        transform: scale(1.2); }
+      .creative-processs .creative-process-grid .project-brainstorm .step-2:hover.step-2 .process-step {
+        background-color: #000;
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .project-brainstorm .step-2 i {
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .project-brainstorm .step-2 .process-step {
+        transition: all 1s ease-in-out; }
+    .creative-processs .creative-process-grid .ui-ux-planning {
+      padding: 2rem 1rem; }
+      .creative-processs .creative-process-grid .ui-ux-planning:hover {
+        color: #000;
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .ui-ux-planning .para {
+        transition: all 1s ease-in-out;
+        position: relative;
+        bottom: 1.5rem; }
+      .creative-processs .creative-process-grid .ui-ux-planning:hover .para {
+        margin-top: 1rem; }
+      .creative-processs .creative-process-grid .ui-ux-planning .step-3:hover.step-3 i {
+        background-color: #ebc11c;
+        transition: all 1s ease-in-out;
+        transform: scale(1.2); }
+      .creative-processs .creative-process-grid .ui-ux-planning .step-3:hover.step-3 .process-step {
+        background-color: #000;
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .ui-ux-planning .step-3 i {
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .ui-ux-planning .step-3 .process-step {
+        transition: all 1s ease-in-out; }
+    .creative-processs .creative-process-grid .interact {
+      padding: 2rem 1rem; }
+      .creative-processs .creative-process-grid .interact:hover {
+        color: #000;
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .interact .para {
+        transition: all 1s ease-in-out;
+        position: relative;
+        bottom: 1.5rem; }
+      .creative-processs .creative-process-grid .interact:hover .para {
+        margin-top: 1rem; }
+      .creative-processs .creative-process-grid .interact .step-4:hover.step-4 i {
+        background-color: #ebc11c;
+        transition: all 1s ease-in-out;
+        transform: scale(1.2); }
+      .creative-processs .creative-process-grid .interact .step-4:hover.step-4 .process-step {
+        background-color: #000;
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .interact .step-4 i {
+        transition: all 1s ease-in-out; }
+      .creative-processs .creative-process-grid .interact .step-4 .process-step {
+        transition: all 1s ease-in-out; }
+  @media (max-width: 500px) {
+    .creative-processs .creative-process-grid {
+      grid-template-columns: 1fr; }
+    .creative-processs .project-discusss,
+    .creative-processs .project-brainstorm,
+    .creative-processs .ui-ux-planning {
+      border-bottom: 0.1px solid #e6e1e1; } }
+  @media (max-width: 768px) and (min-width: 501px) {
+    .creative-processs .creative-process-grid {
+      grid-template-columns: 1fr 1fr; } }
+
+footer {
+  background-color: #000;
+  color: #f4f4f4;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh; }
+  footer .footer-text {
+    font-size: 0.8rem; }
+  footer .icons i:nth-child(1), footer .icons i:nth-child(2), footer .icons i:nth-child(3), footer .icons i:nth-child(4) {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 100%;
+    background: #000;
+    border: 1px solid #f4f4f4;
+    transition: all 0.2s ease-in-out; }
+  footer .icons i:nth-child(1):hover, footer .icons i:nth-child(2):hover, footer .icons i:nth-child(3):hover, footer .icons i:nth-child(4):hover {
+    background: #ebc11c; }
+  @media (max-width: 500px) {
+    footer {
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem 0; }
+      footer .footer-text {
+        margin-bottom: 1rem; } }

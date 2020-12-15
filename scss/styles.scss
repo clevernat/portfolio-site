@@ -1,0 +1,740 @@
+@import "variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: $font-style;
+}
+
+
+%hr-shared {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin: auto;
+    max-width: 60px;
+    padding-top: 0.5rem;
+    border-color: $yellow-color;
+}
+
+
+
+%round-shared {
+    display: inline-block;
+    color: $light-color;
+    background-color: $yellow-color;
+    padding: 0.3rem 1.2rem;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 8.5rem;
+    left: 3rem;
+}
+
+%i-font-shared {
+    color: $light-color;
+    padding: 2rem;
+    border-radius: 100%;
+    background-color: $dark-color;
+}
+
+
+
+
+// Navbar and Showcase
+.navbar-showcase {
+    background: url('/dist/img/showcase.jpg') no-repeat center center/cover;
+
+    // Navbar
+    .nav-bar {
+        // background-color: $dark-color;
+        color: $light-color;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+
+        .nav-logo h1 {
+            font-size: 2rem;
+        }
+
+
+        .nav-item {
+            display: flex;
+        }
+
+        & li {
+            padding: 1rem 1.5rem;
+        }
+
+        & li a {
+            color: $light-color;
+            font-size: 1rem;
+            transition: all 0.5s ease-in-out;
+        }
+
+
+
+        & li a:hover {
+            border-bottom: 2px solid $light-grey;
+            padding-bottom: 0.5rem;
+
+
+        }
+
+
+
+        .current {
+            border-bottom: 2px solid $yellow-color;
+            padding-bottom: 0.5rem;
+
+            &:hover {
+                border-bottom: 2px solid $yellow-color;
+                padding-bottom: 0.5rem;
+            }
+        }
+
+
+        // Mobile view Navbar
+        @media(max-width:500px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            height: 30vh;
+            ;
+            padding: 0 0 1.5rem;
+
+
+            .nav-item {
+                justify-content: center;
+            }
+
+            ul li {
+                padding: 1rem;
+            }
+
+            ul li a {
+                font-size: 1rem;
+            }
+
+            .nav-logo h1 {
+                text-align: center;
+                margin-top: 1rem;
+                font-size: 2rem;
+            }
+        }
+
+
+        @media(max-width:768px) and (min-width:501px) {
+            justify-content: space-around;
+            padding: 1.5rem 0;
+
+
+
+            ul li {
+                padding: 1rem;
+            }
+
+            ul li a {
+                font-size: 1rem;
+            }
+        }
+
+
+    }
+
+
+    // Navbar and showcase mobile
+    @media(max-width:500px) {
+        height: 27vh;
+        border-bottom: 2px solid $yellow-color;
+    }
+
+
+
+
+
+    // SHOWCASE
+    .showcase {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 87vh;
+        color: $light-color;
+
+        &-header h1 {
+            font-size: 4.5rem;
+        }
+
+        &-text p {
+            font-size: 1.3rem;
+            margin: 0 0 1rem;
+        }
+
+        .btn-light {
+            background: $light-color;
+            color: $dark-color;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            margin-top: 1rem;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .btn-light:hover {
+
+            background: $yellow-color;
+        }
+
+
+        @media(max-width:500px) {
+            display: none;
+        }
+
+
+        @media(max-width:768px) and (min-width:501px) {
+            height: 62vh;
+
+            &-header h1 {
+                font-size: 3.5rem;
+                text-align: center;
+                padding: 0 2rem;
+            }
+
+            &-text p {
+                font-size: 1rem;
+                margin: 0 0 1rem;
+            }
+        }
+
+        @media(max-width:1024px) and (min-width:769px) {
+            &-header h1 {
+                font-size: 3.5rem;
+                text-align: center;
+                padding: 0 2rem;
+            }
+
+            &-text p {
+                font-size: 1rem;
+                margin: 0 0 1rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// SPECIALIZATION
+
+.specialization {
+    background: $dark-white;
+    text-align: center;
+    padding: 2rem 1rem 3rem;
+
+    &-header {
+        font-size: 1.4rem;
+
+        hr {
+            @extend %hr-shared;
+        }
+    }
+
+    &-text {
+        padding: 1rem 0 2rem;
+        font-size: 1.2rem;
+    }
+
+
+    .specialization-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        // grid-gap: 1rem;
+
+        .concepting {
+            padding: 1rem;
+
+            & p {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            & i {
+                color: $yellow-color;
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        .ui-ux {
+            padding: 1rem;
+
+            & p {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            & i {
+                color: $yellow-color;
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        .visual-design {
+            padding: 1rem;
+
+            & p {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            & i {
+                color: $yellow-color;
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        .interaction {
+            padding: 1rem;
+
+            & p {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            & i {
+                color: $yellow-color;
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        .clients {
+            padding: 2.5rem 0;
+            background-color: $lighter-grey;
+
+            & i {
+                padding-bottom: 0.5rem;
+            }
+
+            & p {
+                font-size: 1.5rem;
+            }
+
+
+            & figure {
+                padding-top: 1rem;
+                font-size: 2rem;
+            }
+        }
+
+        .awards {
+            padding: 2.5rem 0;
+            background-color: $light-grey;
+
+            & i {
+                padding-bottom: 0.5rem;
+            }
+
+            & p {
+                font-size: 1.5rem;
+            }
+
+            & figure {
+                padding-top: 1rem;
+                font-size: 2rem;
+            }
+
+
+
+        }
+
+        .hours-worked {
+            padding: 2.5rem 0;
+            background-color: $lighter-grey;
+
+            & i {
+                padding-bottom: 0.5rem;
+            }
+
+            & p {
+                font-size: 1.5rem;
+            }
+
+            & figure {
+                padding-top: 1rem;
+                font-size: 2rem;
+            }
+        }
+
+
+        .projects-completed {
+            padding: 2.5rem 0;
+            background-color: $light-grey;
+
+            & i {
+                padding-bottom: 0.5rem;
+            }
+
+            & p {
+                font-size: 1.5rem;
+            }
+
+            & figure {
+                padding-top: 1rem;
+                font-size: 2rem;
+            }
+        }
+
+
+
+
+        // Mobile size
+        @media(max-width:500px) {
+            grid-template-columns: 1fr;
+
+            .concepting,
+            .ui-ux,
+            .visual-design {
+                border-bottom: 0.1px solid $light-grey;
+            }
+
+
+        }
+
+
+
+
+        @media(max-width:768px) and (min-width:501px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+
+}
+
+
+
+
+// CREATIVE PROCESS
+.creative-processs {
+    // background-color: coral;
+    padding: 1.5rem 1rem;
+    text-align: center;
+
+    .creative-process-header p {
+        font-size: 2rem;
+    }
+
+    .creative-process-header hr {
+        @extend %hr-shared;
+    }
+
+    .creative-process-text {
+        padding: 1.2rem 0;
+        font-size: 1.2rem;
+    }
+
+
+    .creative-process-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 1.7rem;
+
+
+        .project-discusss {
+            // border: 1px solid yellow;
+            padding: 2rem 1rem;
+
+
+
+
+            &:hover {
+                color: $dark-color;
+                transition: all 1s ease-in-out;
+            }
+
+            & .para {
+                position: relative;
+                bottom: 1.5rem;
+                transition: all 1s ease-in-out;
+
+            }
+
+            // & h3{
+            //     position: relative;
+            //     top: 4rem;
+            // }
+
+
+            &:hover .para {
+                margin-top: 1rem;
+            }
+
+
+
+
+            & .step-1 {
+
+                &:hover.step-1 i {
+                    background-color: $yellow-color;
+                    transition: all 1s ease-in-out;
+                    transform: scale(1.2);
+
+
+
+                }
+
+                &:hover.step-1 .process-step {
+                    background-color: $dark-color;
+                    transition: all 1s ease-in-out;
+
+                }
+
+
+
+
+                & i {
+                    color: $light-color;
+                    padding: 2rem 2.7rem;
+                    border-radius: 100%;
+                    background-color: $dark-color;
+                    transition: all 1s ease-in-out;
+
+
+                }
+
+
+
+                & .process-step {
+                    @extend %round-shared;
+                    transition: all 1s ease-in-out;
+                }
+
+            }
+        }
+
+        .project-brainstorm {
+            // border: 1px solid blue;
+            padding: 2rem 1rem;
+
+
+            &:hover {
+                color: $dark-color;
+                transition: all 1s ease-in-out;
+            }
+
+            & .para {
+                transition: all 1s ease-in-out;
+                position: relative;
+                bottom: 1.5rem;
+            }
+
+
+            &:hover .para {
+                margin-top: 1rem;
+            }
+
+
+            & .step-2 {
+
+                &:hover.step-2 i {
+                    background-color: $yellow-color;
+                    transition: all 1s ease-in-out;
+                    transform: scale(1.2);
+                }
+
+                &:hover.step-2 .process-step {
+                    background-color: $dark-color;
+                    transition: all 1s ease-in-out;
+
+                }
+
+                & i {
+                    @extend %i-font-shared;
+                    transition: all 1s ease-in-out;
+                }
+
+                & .process-step {
+                    @extend %round-shared;
+                    transition: all 1s ease-in-out;
+                }
+            }
+        }
+
+
+
+
+        .ui-ux-planning {
+            // border: 1px solid violet;
+            padding: 2rem 1rem;
+
+            &:hover {
+                color: $dark-color;
+                transition: all 1s ease-in-out;
+            }
+
+            & .para {
+                transition: all 1s ease-in-out;
+                position: relative;
+                bottom: 1.5rem;
+            }
+
+
+            &:hover .para {
+                margin-top: 1rem;
+            }
+
+            & .step-3 {
+
+                &:hover.step-3 i {
+                    background-color: $yellow-color;
+                    transition: all 1s ease-in-out;
+                    transform: scale(1.2);
+                }
+
+                &:hover.step-3 .process-step {
+                    background-color: $dark-color;
+                    transition: all 1s ease-in-out;
+
+                }
+
+                & i {
+                    @extend %i-font-shared;
+                    transition: all 1s ease-in-out;
+                }
+
+                & .process-step {
+                    @extend %round-shared;
+                    transition: all 1s ease-in-out;
+                }
+            }
+        }
+
+
+
+        .interact {
+            // border: 1px solid slateblue;
+            padding: 2rem 1rem;
+
+            &:hover {
+                color: $dark-color;
+                transition: all 1s ease-in-out;
+            }
+
+            & .para {
+                transition: all 1s ease-in-out;
+                position: relative;
+                bottom: 1.5rem;
+            }
+
+
+            &:hover .para {
+                margin-top: 1rem;
+            }
+
+
+            & .step-4 {
+                &:hover.step-4 i {
+                    background-color: $yellow-color;
+                    transition: all 1s ease-in-out;
+                    transform: scale(1.2);
+                }
+
+                &:hover.step-4 .process-step {
+                    background-color: $dark-color;
+                    transition: all 1s ease-in-out;
+
+                }
+
+                & i {
+                    @extend %i-font-shared;
+                    transition: all 1s ease-in-out;
+                }
+
+                & .process-step {
+                    @extend %round-shared;
+                    transition: all 1s ease-in-out;
+                }
+            }
+        }
+    }
+
+
+    @media(max-width:500px) {
+        .creative-process-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .project-discusss,
+        .project-brainstorm,
+        .ui-ux-planning {
+            border-bottom: 0.1px solid $light-grey;
+        }
+    }
+
+    @media(max-width:768px) and (min-width:501px) {
+        .creative-process-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+
+// FOOTER
+footer{
+    background-color: $dark-color;
+    color: $light-color;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 13vh;
+   
+    
+    & .footer-text{
+        font-size: 0.8rem;
+        // margin-top: 1rem;
+    }
+
+    .icons i:nth-child(1), .icons i:nth-child(2), .icons i:nth-child(3), .icons i:nth-child(4){
+       padding: 0.5rem;
+       margin: 0 0.5rem;
+    border-radius: 100%;
+    background: $dark-color;
+    border: 1px solid $light-color;
+    transition: all 0.2s ease-in-out;
+    }
+
+    .icons i:nth-child(1):hover, .icons i:nth-child(2):hover,  .icons i:nth-child(3):hover, .icons i:nth-child(4):hover{
+        background: $yellow-color;
+    }
+
+
+    @media(max-width:500px) {
+        flex-direction:column;
+        justify-content: center;
+        padding: 1rem 0;
+
+
+        & .footer-text{
+            // font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+
+}
+
